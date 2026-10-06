@@ -62,7 +62,6 @@ public class Picture
         sun.moveVertical(-100);
         sun.changeSize(80);
         sun.makeVisible();
-        
         sun.slowMoveVertical(320);
         
         moon = new Circle();
@@ -71,6 +70,15 @@ public class Picture
         moon.moveVertical(-20);
         moon.changeSize(30);
         moon.makeVisible();
+    }
+    
+    /**
+     * Simula el amanecer
+     */
+    public void amanecer ()
+    {
+        moon.makeInvisible();
+        sun.slowMoveVertical(-320);
     }
 
     /**
